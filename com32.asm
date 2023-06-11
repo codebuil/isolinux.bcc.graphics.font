@@ -4,19 +4,19 @@ push ebp
 mov eax,21cd4cffh
 mov eax,0
 mov ds,ax
-mov eax,50
-mov ebx,50
-mov edx,100
-mov ebp,100
+mov eax,0
+mov ebx,0
+mov edx,319
+mov ebp,199
 mov ecx,1
 fors:
 call BOX
-	add eax,10 
-	add ebx,10
-	add edx,10
-	add ebp,10
+	add eax,5 
+	add ebx,5
+	add edx,-5
+	add ebp,-5
 	inc ecx
-	cmp ecx,10
+	cmp ecx,14
 	jnz fors
 pop ebp
 ret
